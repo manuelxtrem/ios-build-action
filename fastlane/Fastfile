@@ -51,6 +51,13 @@ platform :ios do
       )
     end
 
+    import_certificate(
+      certificate_path: '~/keys/AppleWWDRCAG3.cer',
+      keychain_name: 'ios-build.keychain',
+      keychain_password: keychain_password,
+      log_output: true
+    )
+
     @profiles.each { |profile| install_provisioning_profile(path: profile) }
 
     update_targets = nil
