@@ -28,6 +28,7 @@ async function run() {
     process.env.MOBILEPROVISION_BASE64 = core.getInput(
       "mobileprovision-base64"
     );
+    process.env.CER_PATH = core.getInput("cer-path");
     process.env.P12_PATH = core.getInput("p12-path");
     process.env.P12_KEY_PATH = core.getInput("p12-key-path");
     process.env.P12_CER_PATH = core.getInput("p12-cer-path");
