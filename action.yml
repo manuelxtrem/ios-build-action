@@ -22,6 +22,9 @@ inputs:
   p12-path:
     description: "p12 path (key + cert)"
     required: false
+  cer-path:
+    description: "Cerfiticate file"
+    required: false
   mobileprovision-path:
     description: "mobileprovision path"
     required: false
