@@ -53,7 +53,7 @@ platform :ios do
 
     if !ENV['CER_PATH'].empty?
       import_certificate(
-        certificate_path: !ENV['CER_PATH'].empty?,
+        certificate_path: ENV['CER_PATH'],
         keychain_name: 'ios-build.keychain',
         keychain_password: keychain_password,
         log_output: true
